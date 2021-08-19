@@ -151,4 +151,6 @@ C:\Users\Maria Victoria\source\repos\ProjetoIagro\ProjetoIagro\obj\Debug\netcore
 C:\Users\Maria Victoria\source\repos\ProjetoIagro\ProjetoIagro\bin\Debug\netcoreapp3.1\Humanizer.dll
 C:\Users\Maria Victoria\source\repos\ProjetoIagro\ProjetoIagro\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Maria Victoria\source\repos\ProjetoIagro\ProjetoIagro\obj\Debug\netcoreapp3.1\Razor\Views\Produtor\Index.cshtml.g.cs
-C:\Users\Maria Victoria\source\repos\ProjetoIagro\ProjetoIagro\obj\Debug\netcoreapp3.1\Razor\Views\Produtor\CadastrarProdutor.cshtml.g.cs
+C:\Users\Maria Victoria\source\repos\ProjetoIagro\ProjetoIagro\obj\Debug\netcoreapp3.1\Razor\Views\Produtor\Editar.cshtml.g.cs
+C:\Users\Maria Victoria\source\repos\ProjetoIagro\ProjetoIagro\obj\Debug\netcoreapp3.1\Razor\Views\Produtor\Detalhe.cshtml.g.cs
+C:\Users\Maria Victoria\source\repos\ProjetoIagro\ProjetoIagro\obj\Debug\netcoreapp3.1\Razor\Views\Produtor\Incluir.cshtml.g.cs

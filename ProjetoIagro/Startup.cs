@@ -60,7 +60,7 @@ namespace ProjetoIagro
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=CadastrarProdutor}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

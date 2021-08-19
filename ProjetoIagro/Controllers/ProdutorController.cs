@@ -24,13 +24,13 @@ namespace ProjetoIagro.Controllers
         }
 
         [HttpGet]
-        public ActionResult CadastrarProdutor()
+        public ActionResult Incluir()
         {
             return View();
         }
 
         [HttpPost]
-        public async Task<ActionResult> CadastrarProdutor(Produtor produtor)
+        public async Task<ActionResult> Incluir(Produtor produtor)
         {
             if (ModelState.IsValid)
             {
@@ -44,5 +44,50 @@ namespace ProjetoIagro.Controllers
                 return View(produtor);
             }
         }
+
+        [HttpGet]
+        public IActionResult Editar(int? id)
+        {
+            if (id != null)
+            {
+                Produtor produtor = _contexto.Produtor.Find(id);
+                return View(produtor);
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Editar(int? id, Produtor produtor)
+        {
+            if (id != null)
+            {
+                _contexto.Update(produtor);
+                await _contexto.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                return View(produtor);
+            }
+        }
+
+
+        [HttpGet]
+        public IActionResult Detalhe(int? id)
+        {
+            if (id != null)
+            {
+                Produtor produtor = _contexto.Produtor.Find(id);
+                return View(produtor);
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+
     }
 }
