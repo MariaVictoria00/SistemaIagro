@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31613.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoIagro", "ProjetoIagro\ProjetoIagro.csproj", "{7846B442-C366-4C00-B490-2CFE460788FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjetoIagro", "ProjetoIagro\ProjetoIagro.csproj", "{7846B442-C366-4C00-B490-2CFE460788FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoIagroTest", "ProjetoIagroTest\ProjetoIagroTest.csproj", "{B170E28A-6D21-4905-958F-48C1FF2BD0BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{7846B442-C366-4C00-B490-2CFE460788FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7846B442-C366-4C00-B490-2CFE460788FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7846B442-C366-4C00-B490-2CFE460788FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B170E28A-6D21-4905-958F-48C1FF2BD0BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B170E28A-6D21-4905-958F-48C1FF2BD0BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B170E28A-6D21-4905-958F-48C1FF2BD0BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B170E28A-6D21-4905-958F-48C1FF2BD0BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,48 @@
+﻿@model ProjetoIagro.Models.RegistroVacina
+
+@{
+    ViewData["Title"] = "Detalhe";
+}
+
+<h1>Detalhe</h1>
+
+<div>
+    <h4>RegistroVacina</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Especie)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Especie)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Propriedade)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Propriedade)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Vacina)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Vacina)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Quantidade)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Quantidade)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DataVacina)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DataVacina)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.RegistroVacinaID">Editar</a> |
+    <a asp-action="Index">Voltar</a>
+</div>

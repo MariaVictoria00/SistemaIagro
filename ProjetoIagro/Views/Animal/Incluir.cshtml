@@ -1,0 +1,44 @@
+﻿@model ProjetoIagro.ViewModel.AnimalViewModel
+
+@{
+    ViewData["Title"] = "Incluir";
+}
+
+<h1>Incluir</h1>
+
+<h4>Animal</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Incluir">
+            <div asp-validation-summary="ModelOnly" class="text-danger">Quantidade de animais:</div>
+            <div class="form-group">
+                <label asp-for="Quantidade" class="control-label"></label>
+                <input asp-for="Quantidade" class="form-control" />
+                <span asp-validation-for="Quantidade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Especie" class="control-label">Espécie:</label>
+                <select  class="form-control" id="Especie" asp-for="Especie" asp-items="@(new SelectList(Model.Especies ,"Value", "Text"))">
+                    <option value="">Selecione</option>
+                </select>
+                <span asp-validation-for="Especie" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Propriedade" class="control-label">Propriedade de origem:</label>
+                <select  class="form-control" id="Propriedade" asp-for="Propriedade" asp-items="@(new SelectList(Model.Propriedades ,"Value", "Text"))">
+                    <option value="">Selecione</option>
+                </select>
+                <span asp-validation-for="Propriedade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Registrar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Voltar</a>
+</div>
+

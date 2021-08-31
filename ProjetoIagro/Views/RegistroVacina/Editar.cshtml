@@ -1,0 +1,57 @@
+﻿@model ProjetoIagro.ViewModel.RegistroVacinaViewModel
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<h1>Editar</h1>
+
+<h4>Registro de Vacina</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Editar">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="RegistroVacinaID" />
+            <div class="form-group">
+                <label asp-for="Especie" class="control-label">Especie:</label>
+                <select class="form-control" id="Especie" asp-for="Especie" asp-items="@(new SelectList(Model.Especies ,"Value", "Text"))">
+                    <option value="">Selecione</option>
+                </select>
+                <span asp-validation-for="Especie" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Propriedade" class="control-label">Propriedade:</label>
+                <select  class="form-control" id="Propriedade" asp-for="Propriedade" asp-items="@(new SelectList(Model.Propriedades ,"Value", "Text"))">
+                    <option value="">Selecione</option>
+                </select>
+                <span asp-validation-for="Propriedade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Vacina" class="control-label">Vacina:</label>
+                <select class="form-control" id="Vacina" asp-for="Vacina" asp-items="@(new SelectList(Model.Vacinas ,"Value", "Text"))">
+                    <option value="">Selecione</option>
+                </select>
+                <span asp-validation-for="Vacina" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Quantidade" class="control-label">Quantidade:</label>
+                <input asp-for="Quantidade" class="form-control" />
+                <span asp-validation-for="Quantidade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataVacina" class="control-label">Data:</label>
+                <input asp-for="DataVacina" class="form-control" />
+                <span asp-validation-for="DataVacina" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Voltar</a>
+</div>
+

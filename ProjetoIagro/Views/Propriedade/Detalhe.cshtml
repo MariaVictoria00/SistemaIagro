@@ -1,0 +1,42 @@
+﻿@model ProjetoIagro.Models.Propriedade
+
+@{
+    ViewData["Title"] = "Detalhe";
+}
+
+<h1>Detalhe</h1>
+
+<div>
+    <h4>Propriedade</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NumeroInscricaoID)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NumeroInscricaoID)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Municipio)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Municipio)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Produtor)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Produtor)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Editar" asp-route-id="@Model.NumeroInscricaoID">Editar</a> |
+    <a asp-action="Index">Voltar</a>
+</div>

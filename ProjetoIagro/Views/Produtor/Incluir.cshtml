@@ -1,4 +1,4 @@
-﻿@model ProjetoIagro.Models.Produtor
+﻿@model ProjetoIagro.ViewModel.ProdutorViewModel
 
 @{
     ViewData["Title"] = "Incluir";
@@ -34,11 +34,13 @@
             </div>
             <div class="form-group">
                 <label asp-for="Municipio" class="control-label">Município:</label>
-                <input asp-for="Municipio" class="form-control" />
-                <span asp-validation-for="Municipio" class="text-danger"></span>
+                <select class="form-control" id="Municipio" asp-for="Municipio" asp-items="@(new SelectList(Model.Municipios ,"Value", "Text"))">
+                    <option value="">Selecione</option>
+                </select>
+                
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Criar" class="btn btn-primary" />
             </div>
         </form>
     </div>

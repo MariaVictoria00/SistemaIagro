@@ -1,20 +1,22 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using System;
 using System.Collections.Generic;
+
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace ProjetoIagro.Models
 {
-
     public class Produtor
     {
-
-        public Int32 ProdutorID { get; set; }
-        public String Nome { get; set; }
-        public String CPF { get; set; }
-        public String Rua { get; set; }
-        public String Numero { get; set; }
-        public Int32 Municipio { get; set; }
+        [Key]
+        public int ProdutorID { get; set; }
+        public string Nome { get; set; }
+        public string CPF { get; set; }
+        public string Rua { get; set; }
+        public string Numero { get; set; }
+        public int Municipio { get; set; }
     }
 }
